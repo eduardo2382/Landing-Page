@@ -1,0 +1,239 @@
+:root{
+    --roxo: #a238ff;
+    --cinza: #232323;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--cinza);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px 30px 0px;
+}
+
+header p{
+    color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 20pt;
+    display: inline-block;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header ul{
+    display: inline-block;
+    list-style: georgian;
+    margin-right: 10px;
+}
+
+header ul li{
+    margin-right: 5px;
+    list-style: georgian;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.btn_comprar{
+    background-image: linear-gradient(to right, var(--roxo), #c37eff); 
+    color: white;
+    border: none;
+    border-radius: 60px;
+    padding: 15px 20px;
+    font-size: 12pt;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #a238ff;
+}
+
+.btn_comprar:hover{
+    background-image: linear-gradient(to right, var(--roxo), var(--roxo));
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 15pt;
+    max-width: 100px;
+}
+
+#sobre_nos::before{
+    content: '';
+    position: absolute;
+    top: 72px;
+    background-color: white;
+    height: 2px;
+    width: 103.2px;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#faq::before{
+    content: '';
+    position: absolute;
+    top: 72px;
+    background-color: white;
+    height: 2px;
+    width: 43.3px;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#sobre_nos:hover::before, #faq:hover::before{
+    transform: scaleX(1);
+}
+
+main{
+    width: 90vw;
+}
+
+main section{
+    width: 100%;
+    padding: 150px 0px 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main article{
+    display: inline-block;
+}
+
+#image1{
+    border: none;
+    display: inline-block;
+    transform: rotate(-15deg);
+}
+
+main p{
+    font-family: montserrat;
+    color: white;
+    font-weight: 500;
+    font-size: 20pt;
+}
+
+main h2{
+    font-family: Montserrat;
+    color: white;
+    font-size: 50pt;
+    font-weight: 600;
+    margin: 15px 0px 15px 0px;
+    padding: 0;
+}
+
+main button{
+    margin-top: 25px;
+}
+
+#image2{
+    width: 400px;
+    z-index: 10;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 0px 20px rgba(255, 35, 35, 0.329));
+}
+
+section:nth-child(2){
+    align-items: center;
+    justify-content: start;
+    padding-top: 100px;
+    flex-direction: column;
+}
+
+section:nth-child(2) article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2) h2{
+    text-align: center;
+    display: inline-block;
+    font-size: 35pt;
+    width: 70%;
+    line-height: 50px;
+}
+
+section:nth-child(2) p{
+    width: 80%;
+    text-align: center;
+    font-size: 18pt;
+    font-weight: 400;
+}
+
+.btn_comprar:nth-child(3){
+    font-size: 15pt;
+    margin-top: 40px;
+}
+
+section:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+section:nth-child(3) h2{
+    font-weight: 400;
+    text-align: center;
+}
+
+label{
+    width: 80vw;
+    height: 60px;
+    border-radius: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#btn_cadastrar{
+    background-image: linear-gradient(to right, var(--roxo), #c37eff); 
+    height: 60px;
+    width: 30%;
+    color: white;
+    border: none;
+    border-radius: 60px;
+    padding: 15px 20px;
+    font-size: 15pt;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #a238ff;
+    z-index: 3;
+}
+
+#email{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    font-family: montserrat;
+    font-size: 13pt;
+    padding-left: 20px;
+    z-index: 1;
+}
+
+#email:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px #a238ff;
+}
