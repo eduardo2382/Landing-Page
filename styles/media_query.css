@@ -24,6 +24,10 @@
         text-align: center;
     }
 
+    section:nth-child(1) p{
+        text-align: center;
+    }
+
     #image1{
         width: 70vw;
         margin-top: 90px;
@@ -36,6 +40,10 @@
 
     section:nth-child(2) p{
         font-size: 18pt;
+    }
+
+    #image2{
+        width: 75vw;
     }
 
     section:nth-child(3) h2{
