@@ -49,6 +49,12 @@
     section:nth-child(3) h2{
         font-size: 25pt;
     }
+
+    #btn_cadastrar{
+        font-size: 12pt;
+        padding: 10px 15px 10px 15px;
+        width: 100px;
+    }
     
 }
 
