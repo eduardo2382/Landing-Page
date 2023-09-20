@@ -34,18 +34,18 @@ header p{
     display: inline-block;
 }
 
-header nav{
+#menu_grande{
     display: flex;
     align-items: center;
 }
 
-header ul{
+#menu_grande ul{
     display: inline-block;
     list-style: georgian;
     margin-right: 10px;
 }
 
-header ul li{
+#menu_grande ul li{
     margin-right: 5px;
     list-style: georgian;
     color: white;
@@ -69,7 +69,7 @@ header ul li{
     background-image: linear-gradient(to right, var(--roxo), var(--roxo));
 }
 
-header a{
+#menu_grande a{
     color: white;
     text-decoration: none;
     font-family: Montserrat;
@@ -236,4 +236,60 @@ label{
 #email:focus{
     outline: none;
     box-shadow: 0px 0px 10px #a238ff;
+}
+
+#menu_cell{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 15;
+    width: 80vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #333333;
+    padding-top: 40px;
+}
+
+#menu_cell li{
+    color: white;
+    font-family: Montserrat;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 20pt;
+    padding: 10px 0px 10px 20px;
+}
+
+#menu_cell li:active{
+    background-color: red;
+}
+
+#btn_menu{
+    height: 3px;
+    width: 27px;
+    background-color: white;
+    z-index: 20;
+    position: relative;
+    border: none;
+    top: 20px;
+}
+
+#btn_menu::before,
+#btn_menu::after{
+    width: 27px;
+    height: 3px;
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: white;
+}
+
+#btn_menu::before{
+    top: -10px;
+    left: 0;
+}
+
+#btn_menu::after{
+    top: 10px;
+    left: 0;
 }
