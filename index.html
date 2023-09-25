@@ -24,7 +24,9 @@
             </ul>
             <button class="btn_comprar">Compre Agora</button>
         </nav>
-        <button id="btn_menu"></button>
+        <button id="btn_menu">
+            <span></span>
+        </button>
         <nav id="menu_cell">
             <ul>
                 <li>Sobre nos</li>
@@ -61,7 +63,15 @@
     </main>
 
     <script>
+        const btn_menu = document.body.querySelector('#btn_menu')
+        const menu = document.body.querySelector('#menu_cell')
+        let estado = false
 
+        btn_menu.addEventListener('click', function(){
+            estado == false ? menu.style.left = '20vw' : menu.style.left = '100vw'
+
+            estado == false ? estado = true : estado = false
+        })
     </script>
 </body>
 </html>
